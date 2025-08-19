@@ -1,10 +1,7 @@
 package net.mtheninja.novayage;
 
 import net.minecraft.resources.ResourceLocation;
-import net.mtheninja.novayage.registries.NovayageAttributeRegistry;
-import net.mtheninja.novayage.registries.NovayageCreativeModeTabs;
-import net.mtheninja.novayage.registries.NovayageItemRegistry;
-import net.mtheninja.novayage.registries.NovayageSchoolRegistry;
+import net.mtheninja.novayage.registries.*;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 
@@ -39,7 +36,8 @@ public class Novayage {
            NovayageItemRegistry.register(modEventBus);
            NovayageItemRegistry.NovayageBlocks.register(modEventBus);
            NovayageCreativeModeTabs.register(modEventBus);
-
+        EntityRegistry.register(modEventBus);
+        SpellRegistries.register(modEventBus);
            NovayageAttributeRegistry.register(modEventBus);
            NovayageSchoolRegistry.register(modEventBus);
 

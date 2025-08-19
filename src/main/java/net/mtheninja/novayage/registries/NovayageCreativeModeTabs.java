@@ -17,9 +17,13 @@ public class NovayageCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Novayage.MOD_ID);
 
     public static final Supplier<CreativeModeTab> NOVAYAGE_MATERIALS = CREATIVE_MODE_TAB.register("novayage_materials",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(Novayage.DIVINE_MOLD.get()))
-                    .title(Component.translatable("creativetab.novayage.novayage_materials"))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(NovayageItemRegistry.DAWN_CRYSTAL.get()))
+                    .title(Component.translatable("creativetab.novayage.novayage"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(NovayageItemRegistry.DAWN_CRYSTAL.get());
+                        output.accept(NovayageItemRegistry.DUSK_CRYSTAL.get());
+                        output.accept(NovayageItemRegistry.SUNFALL_INGOT.get());
+                        output.accept(NovayageItemRegistry.MOONFALL_INGOT.get());
                     }).build());
 
 
