@@ -23,7 +23,10 @@ public class NovayageCreativeModeTabs {
                         output.accept(NovayageItemRegistry.DAWN_CRYSTAL.get());
                         output.accept(NovayageItemRegistry.DUSK_CRYSTAL.get());
                         output.accept(NovayageItemRegistry.SUNFALL_INGOT.get());
-                        output.accept(NovayageItemRegistry.MOONFALL_INGOT.get());
+                        output.accept(NovayageItemRegistry.SOLAR_BLADE.get());
+                        output.accept(NovayageItemRegistry.SOLAR_GLAIVE.get());
+                        output.accept(NovayageItemRegistry.LUNAR_HALBERD.get());
+                        output.accept(NovayageItemRegistry.LUNAR_SCYTHE.get());
                     }).build());
 
 

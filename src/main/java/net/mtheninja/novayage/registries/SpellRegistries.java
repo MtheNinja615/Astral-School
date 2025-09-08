@@ -2,7 +2,7 @@ package net.mtheninja.novayage.registries;
 
 import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
 import net.mtheninja.novayage.Novayage;
-import net.mtheninja.novayage.spells.StarStrikeSpell;
+import net.mtheninja.novayage.spells.astral.StarStrikeSpell;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 

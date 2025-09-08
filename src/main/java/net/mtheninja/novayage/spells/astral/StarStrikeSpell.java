@@ -1,4 +1,4 @@
-package net.mtheninja.novayage.spells;
+package net.mtheninja.novayage.spells.astral;
 import io.redspace.ironsspellbooks.api.config.DefaultConfig;
 import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
@@ -18,7 +18,7 @@ import net.mtheninja.novayage.entity.spells.starstrike.StarStrike;
 
 import java.util.List;
 import java.util.Optional;
-
+@AutoSpellConfig
 public class StarStrikeSpell extends AbstractSpell {
     private final ResourceLocation spellId = ResourceLocation.fromNamespaceAndPath(Novayage.MOD_ID, "star_strike");
 

@@ -25,6 +25,26 @@ public class NovayageExtendedWeaponsTiers implements Tier, IronsWeaponTier {
             new AttributeContainer(AttributeRegistry.MAX_MANA, 50, AttributeModifier.Operation.ADD_VALUE),
             new AttributeContainer(NovayageAttributeRegistry.ASTRAL_MAGIC_POWER, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
     );
+    //Lunar Halberd
+    public static NovayageExtendedWeaponsTiers LUNAR_HALBERD = new NovayageExtendedWeaponsTiers(16000, 9, -2.5F, 10, BlockTags.INCORRECT_FOR_NETHERITE_TOOL, () -> Ingredient.of(ItemRegistry.BLANK_RUNE.get()),
+            new AttributeContainer(AttributeRegistry.MAX_MANA, 50, AttributeModifier.Operation.ADD_VALUE),
+            new AttributeContainer(NovayageAttributeRegistry.ASTRAL_MAGIC_POWER, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+    );
+    //Lunar Scythe
+    public static NovayageExtendedWeaponsTiers LUNAR_SCYTHE = new NovayageExtendedWeaponsTiers(16000, 9, -2.5F, 10, BlockTags.INCORRECT_FOR_NETHERITE_TOOL, () -> Ingredient.of(ItemRegistry.BLANK_RUNE.get()),
+            new AttributeContainer(AttributeRegistry.MAX_MANA, 50, AttributeModifier.Operation.ADD_VALUE),
+            new AttributeContainer(NovayageAttributeRegistry.ASTRAL_MAGIC_POWER, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+    );
+    //Solar Glaive
+    public static NovayageExtendedWeaponsTiers SOLAR_GLAIVE = new NovayageExtendedWeaponsTiers(16000, 9, -2.5F, 10, BlockTags.INCORRECT_FOR_NETHERITE_TOOL, () -> Ingredient.of(ItemRegistry.BLANK_RUNE.get()),
+            new AttributeContainer(AttributeRegistry.MAX_MANA, 50, AttributeModifier.Operation.ADD_VALUE),
+            new AttributeContainer(NovayageAttributeRegistry.ASTRAL_MAGIC_POWER, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+    );
+    //Solar Blade
+    public static NovayageExtendedWeaponsTiers SOLAR_BLADE = new NovayageExtendedWeaponsTiers(16000, 9, -2.5F, 10, BlockTags.INCORRECT_FOR_NETHERITE_TOOL, () -> Ingredient.of(ItemRegistry.BLANK_RUNE.get()),
+            new AttributeContainer(AttributeRegistry.MAX_MANA, 50, AttributeModifier.Operation.ADD_VALUE),
+            new AttributeContainer(NovayageAttributeRegistry.ASTRAL_MAGIC_POWER, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+    );
 
 
     //private final int level;

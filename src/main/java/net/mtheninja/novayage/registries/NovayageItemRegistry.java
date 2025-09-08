@@ -29,7 +29,9 @@ public class NovayageItemRegistry {
     // Just a little info for you!
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Novayage.MOD_ID);
 
-    //Weapons
+    /***
+     * Weapons
+     */
 
     //Rudimentary Dusk Axe
     public static final DeferredHolder<Item, Item> RUDIMENTARY_DUSK_AXE = ITEMS.register("rudimentary_dusk_axe", () ->
@@ -39,8 +41,25 @@ public class NovayageItemRegistry {
     public static final DeferredHolder<Item, Item> RUDIMENTARY_DAWN_SWORD = ITEMS.register("rudimentary_dawn_sword", () ->
             new MagicSwordItem(NovayageExtendedWeaponsTiers.RUDIMENTARY_DAWN_SWORD, ItemPropertiesHelper.equipment().rarity(Rarity.RARE).attributes(ExtendedSwordItem.createAttributes(NovayageExtendedWeaponsTiers.RUDIMENTARY_DAWN_SWORD)),
                     SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.SUNBEAM_SPELL, 1))));
-
-    //Crafting Items
+    //Lunar Scythe
+    public static final DeferredHolder<Item, Item> LUNAR_SCYTHE = ITEMS.register("lunar_scythe", () ->
+            new MagicSwordItem(NovayageExtendedWeaponsTiers.LUNAR_SCYTHE, ItemPropertiesHelper.equipment().rarity(Rarity.RARE).attributes(ExtendedSwordItem.createAttributes(NovayageExtendedWeaponsTiers.LUNAR_SCYTHE)),
+                    SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.SUNBEAM_SPELL, 1))));
+    //Lunar Halberd
+    public static final DeferredHolder<Item, Item> LUNAR_HALBERD = ITEMS.register("lunar_halberd", () ->
+            new MagicSwordItem(NovayageExtendedWeaponsTiers.LUNAR_HALBERD, ItemPropertiesHelper.equipment().rarity(Rarity.RARE).attributes(ExtendedSwordItem.createAttributes(NovayageExtendedWeaponsTiers.LUNAR_HALBERD)),
+                    SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.SUNBEAM_SPELL, 1))));
+    //Solar Blade
+    public static final DeferredHolder<Item, Item> SOLAR_BLADE = ITEMS.register("solar_blade", () ->
+            new MagicSwordItem(NovayageExtendedWeaponsTiers.SOLAR_BLADE, ItemPropertiesHelper.equipment().rarity(Rarity.RARE).attributes(ExtendedSwordItem.createAttributes(NovayageExtendedWeaponsTiers.SOLAR_BLADE)),
+                    SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.SUNBEAM_SPELL, 1))));
+    //Solar Glaive
+    public static final DeferredHolder<Item, Item> SOLAR_GLAIVE = ITEMS.register("solar_glaive", () ->
+            new MagicSwordItem(NovayageExtendedWeaponsTiers.SOLAR_GLAIVE, ItemPropertiesHelper.equipment().rarity(Rarity.RARE).attributes(ExtendedSwordItem.createAttributes(NovayageExtendedWeaponsTiers.SOLAR_GLAIVE)),
+                    SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.SUNBEAM_SPELL, 1))));
+    /***
+     * Crafting Items
+     */
     public static final DeferredItem<Item> SUNFALL_INGOT = ITEMS.register("sunfall_ingot",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> MOONFALL_INGOT = ITEMS.register("moonfall_ingot",
